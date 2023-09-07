@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { number } from "prop-types";
+import useCounter from "./useCounter.js";
 
 Counter.propTypes = {
   initialValue: number,
@@ -9,10 +9,7 @@ Counter.propTypes = {
 export default function Counter({ initialValue = 0, step = 1 }) {
   // TODO : begin with another number
   // TODO : increment/decrement by another number
-  const [counter, setCounter] = useState(initialValue);
-
-  const increment = () => setCounter(counter + step);
-  const decrement = () => setCounter(counter - step);
+  const [counter, increment, decrement] = useCounter(initialValue, step);
 
   return (
     <>
