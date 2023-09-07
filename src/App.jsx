@@ -1,11 +1,20 @@
-import Counter from "./Counter";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./HomePage";
+import MainTemplate from "./MainTemplate";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainTemplate />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+    ],
+  },
+]);
 
 export default function App() {
-  return (
-    <>
-      <Counter />
-      <Counter initialValue={12} />
-      <Counter initialValue={20} step={10} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
