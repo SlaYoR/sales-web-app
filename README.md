@@ -36,3 +36,17 @@ yarn commit
 ```
 
 Enjoy! 🎇
+
+## Design
+
+### Homepage
+
+![sales-homepage](./docs/sales-homepage.drawio.svg)
+
+### Product slug
+
+![sales-product](./docs/sales-product.drawio.svg)
+
+### Favorites
+
+![sales-favorites](./docs/sales-favorites.drawio.svg)
