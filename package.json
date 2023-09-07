@@ -2,7 +2,6 @@
   "name": "sales-web-app",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,6 +9,7 @@
     "preview": "vite preview",
     "prepare": "husky install"
   },
+  "type": "module",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -24,6 +24,8 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-packagejson": "^2.4.5",
     "vite": "^4.4.5"
   }
 }
