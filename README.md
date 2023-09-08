@@ -57,17 +57,6 @@ Designers talk about screen, developpers tend to use router. We will use a namin
 
 ```
 /src
-    /HomePage
-    /ContactPage
-    /CountersPage
-
-/src
-    /pages
-        /HomePage
-        /ContactPage
-        /CountersPage
-
-/src
     /contact
         /ContactPage
         /ContactsPage
@@ -75,7 +64,13 @@ Designers talk about screen, developpers tend to use router. We will use a namin
         /CountersPage
     /home
         /HomePage
+            index.js            # The indexation file
+            HomePage.jsx        # A component
+            HomePage.test.jsx   # Test the component
+            styles.css          # The CSS file for HomePage
+            useNews.js          # A hook that is only used once in HomePage
+            useNews.test.js     # Test the hook
     /hooks
-        index.js        # Should only be used as an indexation file
-        /useCounter
+        index.js                # Should only be used as an indexation file
+        useCounter.js           # A reusable hook
 ```
