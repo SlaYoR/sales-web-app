@@ -1,5 +1,5 @@
 import { number } from "prop-types";
-import useCounter from "./useCounter.js";
+import { useCounter } from "../hooks";
 
 Counter.propTypes = {
   initialValue: number,

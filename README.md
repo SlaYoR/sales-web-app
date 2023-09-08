@@ -68,11 +68,14 @@ Designers talk about screen, developpers tend to use router. We will use a namin
         /CountersPage
 
 /src
-    /home
-        /HomePage
     /contact
         /ContactPage
         /ContactsPage
     /counters
         /CountersPage
+    /home
+        /HomePage
+    /hooks
+        index.js        # Should only be used as an indexation file
+        /useCounter
 ```
