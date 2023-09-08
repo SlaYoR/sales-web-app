@@ -50,3 +50,29 @@ Enjoy! 🎇
 ### Favorites
 
 ![sales-favorites](./docs/sales-favorites.drawio.svg)
+
+## Folder Structure
+
+Designers talk about screen, developpers tend to use router. We will use a naming nomenclature as follow:
+
+```
+/src
+    /HomePage
+    /ContactPage
+    /CountersPage
+
+/src
+    /pages
+        /HomePage
+        /ContactPage
+        /CountersPage
+
+/src
+    /home
+        /HomePage
+    /contact
+        /ContactPage
+        /ContactsPage
+    /counters
+        /CountersPage
+```
