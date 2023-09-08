@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import clsx from "clsx";
 import { Link, Outlet, useLocation } from "react-router-dom";
 
@@ -39,7 +40,9 @@ export default function MainTemplate() {
       <main>
         <Outlet />
       </main>
-      <footer>COPYRIGHT</footer>
+      <footer>
+        <Typography>COPYRIGHT</Typography>
+      </footer>
     </>
   );
 }
