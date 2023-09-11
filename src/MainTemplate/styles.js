@@ -19,6 +19,6 @@ export const Button = styled(MUIButton, {
   shouldForwardProp: (prop) => prop !== "current",
 })(({ theme, current }) => ({
   margin: `${theme.spacing(2)} 0`,
-  color: "white",
-  borderBottom: current ? "3px solid white" : null,
+  color: `${theme.palette.secondary.contrastText}`,
+  borderBottom: current ? "3px solid white" : 0,
 }));
