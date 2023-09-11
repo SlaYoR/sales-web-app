@@ -21,6 +21,12 @@ Run the server:
 yarn dev
 ```
 
+Maybe you'll want a dev API:
+
+```shell
+yarn dev:api
+```
+
 Develop your feature. 👩‍💻👨‍💻
 
 Test it!
