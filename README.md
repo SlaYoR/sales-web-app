@@ -68,6 +68,12 @@ Designers talk about screen, developpers tend to use router. We will use a namin
         /ContactsPage
     /counters
         /CountersPage
+    /ds                         # Design System with Atomic Design approach
+        /atoms
+            index.js            # The indexation file
+            /Price              # Component to be reused
+                index.js
+                Price.jsx
     /home
         /HomePage
             index.js            # The indexation file
@@ -76,6 +82,9 @@ Designers talk about screen, developpers tend to use router. We will use a namin
             styles.css          # The CSS file for HomePage
             useNews.js          # A hook that is only used once in HomePage
             useNews.test.js     # Test the hook
+    /hoc
+        index.js                # Should only be used as an indexation file
+        withRow.jsx             # A Higher Order Component
     /hooks
         index.js                # Should only be used as an indexation file
         useCounter.js           # A reusable hook
