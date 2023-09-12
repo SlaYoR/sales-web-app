@@ -8,7 +8,13 @@ import { ProductImage } from "../ProductImage";
 import { ProductPrice } from "../ProductPrice";
 
 export default function HomePage() {
-  const { products } = useProducts();
+  const { isLoading, error, data: products } = useProducts();
+
+  // TODO : Utilisons un composant MUI
+  if (isLoading) return "Loading...";
+
+  // TODO : Est-ce qu'on pourrait pas utiliser un message d'erreur pour l'utilisateur à la hauteur de l'app entière ?
+  if (error) return "Oulala";
 
   const productColumns = [
     {
