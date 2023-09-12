@@ -1,7 +1,7 @@
 import { Button, ButtonGroup, Card, Typography } from "@mui/material";
 import { number } from "prop-types";
 
-import { useCounter } from "../../hooks";
+import { useCounter } from "../../../hooks";
 import { CardContent } from "./styles";
 
 Counter.propTypes = {
